@@ -4,6 +4,8 @@ import Navbar from "./componets/Navbar";
 import Products from "./componets/Products";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import Details from "./componets/Details";
+import ShoppingCart from "./componets/ShoppingCart";
 
 function App() {
   return (
@@ -12,8 +14,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Products />} />
-        {/* <Route path="/details/:id" element={<Details />} />
-        <Route path="/shoppingCart" element={<ShoppingCart />} /> */}
+        <Route path="/details" element={<Details />} />
+        <Route path="/shoppingCart" element={<ShoppingCart/>} />
       </Routes>
     </Router>
   );
